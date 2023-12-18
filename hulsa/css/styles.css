@@ -1,279 +1,337 @@
-*{
-  padding: 0;
+* {
   margin: 0;
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background: #fff;
-}
-a{
-  text-decoration: none;
-  color:#191919;
-}
-ul{
-  list-style: none;
-}
-img{
-  max-width: 100%;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* nava bar */
-.navbar{
- background: #fff;
- padding: 20px;
-
-}
-.navbar .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .main-menu ul{
-  display: flex;
-}
-.navbar ul li a{
-  padding: 10px 20px;
-  display: block;
-  font-weight: 600;
-  transition: 0.5s;
-}
-.navbar ul li a:hover{
-  color:#FFA732;
-}
-/* header */
-.header{
-  margin-bottom: 50px;
-  background: #fff;
-  color: #000;
-}
-/* .header .container{
-  background: url(../images/haramaya-university.jpeg);
-  background-size: contain;
-  background-position: center bottom;
-  height: 550px;
-} */
-.header .header-content{
-  width: 70%;
-}
-.header .header-text{
-  width:70%;
-  margin-bottom: 20px;
-}
-/* leadership  */
-.leadership-content{
-  display: flex;
-  /* background: #fff; */
-}
-/* .leadership-content .leadership-info img{
- 
-  display: block;
-} */
-.leadership-content .leadership-info{
-  margin: auto 20px ;
-}
-/* news */
-.news{
-  padding:40px 0;
-}
-.news .news-featured{
-  width:400px;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-.news .feautred-news-text{
-  width:700px;
-}
-.news-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap:30px;
-  margin: 20px 0;
-}
-/* Footer */
-.footer{
-  padding: 40px 0;
-}
-.footer h4{
-  margin-bottom: 10px;
+.navbar {
+  padding: 10px 80px !important;
+  background-color: rgb(41, 38, 34) !important;
 }
 
-.footer ul li{
-  line-height: 2.5;
+.navbar li a :hover{
+  color: #ffca68 !important;
 }
-.footer a{
-  color:#FFA732;
+.current{
+  color: #ffca68 !important;
 }
-.footer i{
-  font-size: 1.5rem;
-  margin-right: 10px;
-  margin-top:20px ;
+
+.navbar-brand img {
+  height: 60px !important;
+  padding: 0px !important;
 }
-.footer-grid{
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap:30px;
-  justify-content: center;
-  align-items: center;
+
+.navbar a{
+  color: #fff !important;
+  font-size: 0.95rem !important;
 }
-.footer .footer-card{
-  margin: 10px 30px 30px 0;
-}
-.footer input[type="email"]{
+
+.header {
+  min-height: 60vh;
   width: 100%;
-  padding:10px ;
-  border:  1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-.container{
-  max-width: 1100px;
-  margin: 0  auto;
-  padding:0 15px;
-
-}
-.container-sm{
-  max-width: 1000px;
-  margin: 0  auto;
-  padding:0 15px;
-
-}
-/* text */
-.text-xxl{
-  font-size: 3rem;
-  line-height: 1.2;
-  font-weight: 600;
-  margin: 40px 0 20px;
-}
-.text-xl{
-  font-size: 2.2rem;
-  line-height: 1.4;
-  font-weight: normal;
-  margin: 40px 0 20px;
-}
-.text-lg{
-  font-size: 1.8rem;
-  line-height: 1.4;
-  font-weight: normal;
-  margin: 30px 0 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(/hulsa/images/haramaya-university.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-.text-md{
-  font-size: 1.2rem;
-  line-height: 1.4;
-  font-weight: normal;
-  margin: 20px 0 10px;
-}
-.text-sm{
-  font-size: 0.9rem;
-  line-height: 1.4;
-  font-weight: normal;
-  margin: 10px 0 5px;
-}
-.text-center{
-  text-align:center;
-}
-/* background */
-.bg-primary{
-  background-color:#FFA732 ;
+.text-box {
+  width: 90%;
   color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.bg-light{
-  background-color:#fff ;
-  color: #000;
+
+.text-box h1 {
+  font-size: 62px;
+  font-family: Sora !important;
+  font-weight: bold;
 }
-.bg-dark{
-  background-color:#FFA732 ;
-  color: #fff;
-}
-.bg-black{
-  background-color:#000 ;
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 25px;
   color: #fff;
 }
 
-/* card */
-.card{
-  background: #fff;
-  color: #000;
-  border-radius: 10px;
-  padding: 20px;
-}
-/* Buttons */
-.btn{
+.hero-btn {
   display: inline-block;
-  padding: 13px 20px;
-  background: lightcyan;
-  color: #333;
-  font-weight: 600;
   text-decoration: none;
-  border: none;
-  border-radius: 10px;
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 1.06rem !important;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
   cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: none;
+  background: #ffca68;
+  color: #1a1a1a;
   transition: 0.5s;
 }
-.btn:hover{
-  opacity: 0.8;
+
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 3px 30px !important;
+      background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  .navbar a{
+      text-align: right;
+  }
+  
+  .text-box h1 {
+      font-size: 20px;
+  }
+
+  .text-box p {
+      font-size: 16px;
+  }
+
+  .hero-btn{
+      font-size: 0.9rem !important;
+      padding: 10px
+  }
+  .header{
+      min-height: 60vh;
+  }
 }
-.btn-primary{
-  background: #FFA732;
-  color: #fff;
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 30px 0;
+  overflow: hidden;
 }
-.btn-block{
+
+.section-bg {
+  background-color: rgb(221, 218, 217)
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 0;
+  line-height: 1px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.section-title p {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.section-title p::after {
+  content: "";
+  position: absolute;
   display: block;
-  width: 100%;
-}
-/* .heading-container{
-height: 500px;
-text-align: center;
-/* background-image: url(/hulsa/images/haramaya-university.jpeg);
-background-size: cover; /* or 'contain' */
-/* background-position: center center; */ 
-/* background-color:#FFECD6;
-padding: 50px;
-color:#163020; */
-/* } */
-/* .logo{
-  width: 350px;
-  height: 350px;
-  border-radius: 175px;
-}
-.heading-paragraph{
-font-size:20px;
-font-weight: bold; 
-padding: 40px; 
-}
-.HULSA{
-margin: 10px;
-font-size:40px;
-font-weight: bold;   
-}
-.navbar-nav{
-  margin:0 500px;
+  width: 60px;
+  height: 2px;
+  background: #eb5d1e;
+  bottom: 0;
+  left: calc(50% - 30px);
 }
 
-.middel-container{
-  padding: 50px 0;
-  height: 300px;
-  margin: 100px 0;
-  text-align: center;
+@media (max-width: 768px) {
+  section{
+      padding: 0;
+      text-align: center;
+  }
 }
-.name-tag{
-  font-weight: 500;
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #1a1a1a;
+}
+
+.about h4 {
   font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #1a1a1a;
 }
-.news{
-  margin:90px 0;
-}
-.footer-container{
-  background-color:#FFECD6;
-  height: 200px;
-  margin: 50px 0;
-  padding: 50px;
-  text-align: center;
 
+.about i {
+  font-size: 48px;
+  margin-top: 15px;
+  color: #1a1a1a;
 }
-.icons{
-  margin:0 20px;
-}  */
+
+.about p {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+@media (max-width: 991px) {
+  .about .about-img img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .about-img img {
+    padding: 20px 0;
+    max-width: 90%;
+  }
+}
+
+/*--------------------------------------------------------------
+another section
+--------------------------------------------------------------*/
+.another-section{
+  padding: 60px 0;
+  background-color: #f3eeee;
+}
+
+
+/*--------------------------------------------------------------
+# leadership
+--------------------------------------------------------------*/
+
+/* Leadership Section Styling */
+
+#leadership {
+padding: 60px 0;
+background-color: #e0dede;
+}
+
+#leadership .section-title h2 {
+font-size: 36px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 30px;
+color: #1a1a1a;
+}
+
+#leadership .card {
+border: none;
+background: #fff;
+margin-bottom: 30px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+}
+
+#leadership .card-body{
+text-align: center;
+}
+
+#leadership .card:hover {
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#leadership .card img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin: 20px auto;
+border: 5px solid #fff;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#leadership .card-title {
+font-size: 24px;
+font-weight: bold;
+color: #1a1a1a;
+margin-bottom: 5px;
+}
+
+#leadership .card-subtitle {
+font-size: 18px;
+color: #777;
+margin-bottom: 20px;
+}
+
+#leadership .card-text {
+font-size: 16px;
+color: #555;
+}
+
+/*--------------------------------------------------------------
+news
+--------------------------------------------------------------*/
+
+/* News Section Styling */
+
+#news {
+padding: 60px 0;
+background-color: #f3eeee;
+}
+
+#news .section-title h2 {
+font-size: 36px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 30px;
+color: #1a1a1a;
+}
+
+#news .card {
+border: none;
+background: #fff;
+margin-bottom: 30px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+}
+
+#news .card:hover {
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#news .card img {
+width: 100%;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+#news .card-body {
+padding: 20px;
+}
+
+#news .card-title {
+font-size: 24px;
+font-weight: bold;
+color: #1a1a1a;
+margin-bottom: 10px;
+}
+
+#news .card-text {
+font-size: 16px;
+color: #555;
+margin-bottom: 20px;
+}
+
+#news .btn {
+background-color: #ec9874;
+color: #fff;
+border: none;
+transition: background-color 0.3s;
+}
+
+#news .btn:hover {
+background-color: #db6e38;
+color: #fff;
+}
