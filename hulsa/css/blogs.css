@@ -1,0 +1,31 @@
+.main-blog-post{
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+.main-blog-post .main-blog-post-text {
+  width: 800px;
+}
+.main-blog-post-img img{
+  border-radius: 10px;
+}
+.blogs{
+  padding: 50px;
+}
+.blogs-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 50px;
+}
+.blogs-heading{
+ padding-left:30px ; 
+}
+.card{
+  border-radius: 10px;
+  padding: 20px;
+}
+.card img{
+  border-radius: 10px;
+}
