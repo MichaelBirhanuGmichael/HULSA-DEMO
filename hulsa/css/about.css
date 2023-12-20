@@ -1,0 +1,18 @@
+
+.middle{
+  padding: 60px 140px;
+}
+.middle .middle-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap:30px;
+  justify-content: center;
+  align-items: center;
+}
+.middle  .middle-content img{
+  border-radius: 15px;
+}
+
+footer{
+  padding: 60px 100px;
+}
